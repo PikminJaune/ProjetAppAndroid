@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TP-Apps</string>
+    <string name="title_tickets">Tickets</string>
+    <string name="title_gateways">Gateways</string>
+    <string name="title_network">Network</string>
+    <!-- ======================================== -->
+    <string name="tenretni" translatable="false">Tenretni</string>
+    <string name="timer">Loading %s/10 ...</string>
+    <string name="names" translatable="false">Jean-Simon Barbeau, Olivier Mathieu-Grégoire &amp; Benjamin Lemire</string>
+    <string name="loading_template" translatable="false">Loading 0/10 ...</string>
+    <string name="skip" translatable="false">Skip</string>
+    <string name="trademark" translatable="false">Tenretni - 2022®</string>
+    <string name="quickie" translatable="false">Quickie</string>
+    <string name="Online_Server" translatable="false">Online</string>
+    <string name="Online">Online</string>
+    <string name="Offline">Offline</string>
+    <string name="Ebps" translatable="false">%s Ebps</string>
+    <string name="ns" translatable="false">%s ns</string>
+    <string name="dBm" translatable="false">%s dBm</string>
+    <string name="Installation_Good">Installation completed</string>
+    <string name="Installation_Bad">Installation error</string>
+    <string name="n_a" translatable="false">N/A</string>
+
+    <!-- ======================================== -->
+    <string name="error">Impossible de charger les données</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Install">Install</string>
+    <string name="Solve">Solve</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="AccessDenied">Permission non accordée</string>
+    <string name="update">UPDATE</string>
+    <string name="reboot">REBOOT</string>
+    <string name="next_reboot_at">Next reboot at :</string>
+    <string name="last_update">Last update :</string>
+    <string name="gateways">Gateways</string>
+    <string name="open">OPEN</string>
+    <string name="online_gateway">Online</string>
+    <string name="DetailTicket">Detail for a ticket</string>
+    <string name="DetailGateway">Detail for a gateway</string>
+
+
+</resources>

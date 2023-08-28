@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.ui.network.NetworkFragment">
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/pgbLoading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:indeterminateTint="@android:color/holo_blue_dark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imvTenretni"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/tenretni"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txvNextReboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/next_reboot_at"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvTenretni" />
+
+    <TextView
+        android:id="@+id/txvDateReboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021-04-23 15:05"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txvNextReboot"
+        app:layout_constraintStart_toEndOf="@+id/txvNextReboot"
+        app:layout_constraintTop_toTopOf="@+id/txvNextReboot" />
+
+    <TextView
+        android:id="@+id/txvLastUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/last_update"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txvNextReboot" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginVertical="8dp"
+        android:id="@+id/rcvReseau"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/txvLastUpdate" />
+
+    <TextView
+        android:id="@+id/txvDateLastUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2021-04-23 15:05"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/txvLastUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/txvDateReboot" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

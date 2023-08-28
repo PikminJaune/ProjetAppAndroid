@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP-Apps</string>
+    <string name="title_tickets">Tickets</string>
+    <string name="title_gateways">Gateways</string>
+    <string name="title_network">Network</string>
+    <string name="timer">Loading %s/10 ...</string>
+    <string name="error">Unable to load data</string>
+    <string name="Online">Online</string>
+    <string name="Offline">Offline</string>
+    <string name="Install">Install</string>
+    <string name="Solve">Solve</string>
+    <string name="Installation_Good">Installation completed</string>
+    <string name="Installation_Bad">Installation error</string>
+    <string name="update">UPDATE</string>
+    <string name="reboot">REBOOT</string>
+    <string name="next_reboot_at">Next reboot at :</string>
+    <string name="last_update">Last update :</string>
+    <string name="gateways">Gateways</string>
+    <string name="open">Open</string>
+    <string name="online_gateway">Online</string>
+    <string name="DetailTicket">Detail for a ticket</string>
+    <string name="DetailGateway">Detail for a gateway</string>
+</resources>

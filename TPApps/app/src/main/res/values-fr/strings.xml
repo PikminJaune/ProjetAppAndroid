@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP-Apps</string>
+    <string name="title_tickets">Billets</string>
+    <string name="title_gateways">Passerelles</string>
+    <string name="timer">Chargement %s/10...</string>
+    <string name="error">Impossible de charger les données</string>
+    <string name="title_network">Réseau</string>
+    <string name="Online">En Ligne</string>
+    <string name="Offline">Hors Ligne</string>
+    <string name="Solve">Résoudre</string>
+    <string name="Install">Installer</string>
+    <string name="Installation_Good">Installation complétée</string>
+    <string name="Installation_Bad">Erreur lors de l\'Installation</string>
+    <string name="update">mettre à jour</string>
+    <string name="reboot">redémarrer</string>
+    <string name="next_reboot_at">Prochain redémarrage :</string>
+    <string name="last_update">Dernière mise à jour :</string>
+    <string name="gateways">Passerelles</string>
+    <string name="open">Ouvrir</string>
+    <string name="online_gateway">En Ligne</string>
+    <string name="DetailTicket">Détail d\'un ticket</string>
+    <string name="DetailGateway">Détail d\'une passerelle</string>
+</resources>

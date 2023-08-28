@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="130dp"
+        android:layout_width="390dp">
+
+
+        <TextView
+            android:id="@+id/txvNomNoeud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"
+            android:text="Tigrou"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txvAdresseIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3.3.3.3"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/txvNomNoeud"
+            app:layout_constraintStart_toStartOf="@+id/txvNomNoeud"
+            app:layout_constraintTop_toBottomOf="@+id/txvNomNoeud" />
+
+        <TextView
+            android:id="@+id/txvDownload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="24dp"
+            android:drawablePadding="10dp"
+            android:layout_marginBottom="16dp"
+            android:text="110.272 Ebps"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:drawableLeftCompat="@drawable/ic_outline_cloud_download_24" />
+
+        <TextView
+            android:id="@+id/txvLatence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="35dp"
+            android:text="10 ns"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/txvDownload"
+            app:layout_constraintEnd_toEndOf="@+id/txvDownload"
+            app:layout_constraintStart_toStartOf="parent"
+            app:drawableLeftCompat="@drawable/ic_baseline_sync_alt_24" />
+
+        <TextView
+            android:id="@+id/txvUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="20dp"
+            android:text="99.597 Ebps"
+            android:textSize="20sp"
+            app:drawableLeftCompat="@drawable/ic_outline_cloud_upload_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/txvQualiteSignal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="-10 dBm"
+            android:drawablePadding="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/txvUpload"
+            app:layout_constraintStart_toStartOf="@+id/txvUpload"
+            app:drawableLeftCompat="@drawable/ic_baseline_signal_cellular_alt_24" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipHaut"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Online"
+            android:textAlignment="center"
+            app:chipBackgroundColor="@color/gateway_status_online"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

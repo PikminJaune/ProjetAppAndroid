@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_tickets">
+
+    <fragment
+        android:id="@+id/navigation_tickets"
+        android:name="com.tp_apps.presentation.ui.tickets.TicketsFragment"
+        android:label="@string/title_tickets"
+        tools:layout="@layout/fragment_tickets" >
+        <action
+            android:id="@+id/action_navigation_tickets_to_detailTicketFragment"
+            app:destination="@id/detailTicketFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gateways"
+        android:name="com.tp_apps.presentation.ui.gateways.GatewaysFragment"
+        android:label="@string/title_gateways"
+        tools:layout="@layout/fragment_gateways" >
+        <action
+            android:id="@+id/action_navigation_gateways_to_detailGatewayFragment"
+            app:destination="@id/detailGatewayFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_network"
+        android:name="com.tp_apps.presentation.ui.network.NetworkFragment"
+        android:label="@string/title_network"
+        tools:layout="@layout/fragment_network" />
+    <fragment
+        android:id="@+id/detailTicketFragment"
+        android:name="com.tp_apps.presentation.ui.tickets.DetailTicketFragment"
+        android:label="@string/DetailTicket"
+        tools:layout="@layout/fragment_detail_ticket">
+        <argument
+            android:name="href"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailTicketFragment_to_detailGatewayFragment"
+            app:destination="@id/detailGatewayFragment" />
+        <action
+            android:id="@+id/action_detailTicketFragment_to_mapsActivity"
+            app:destination="@id/mapsActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailGatewayFragment"
+        android:name="com.tp_apps.presentation.ui.gateways.DetailGatewayFragment"
+        android:label="@string/DetailGateway"
+        tools:layout="@layout/fragment_detail_gateway">
+        <argument
+            android:name="href"
+            app:argType="string" />
+    </fragment>
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.tp_apps.presentation.ui.map.MapsActivity"
+        android:label="activity_maps"
+        tools:layout="@layout/activity_maps" >
+        <argument
+            android:name="position"
+            app:argType="com.google.android.gms.maps.model.LatLng" />
+    </activity>
+</navigation>
